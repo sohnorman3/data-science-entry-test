@@ -5,8 +5,8 @@ def find_and_replace(lst, find_val, replace_val):
     - lst must be a list.
     - Return the modified list.
     """
-    if not isinstance(lst, list): #checking isinstance compare if object lst is a list. "Not" function compare if the false run next line.
-        raise ValueError("Input must be a list")  #raise is an exception handling and Value error define the incorrect format.
+    if not isinstance(lst, list): # isinstance compare if object lst is a list. "Not" function compare if the false run next line.
+        raise ValueError("Input must be a list")  #raise is an exception handling if input is not a list
 
     return [replace_val if item == find_val else item for item in lst]  #  check each item in list with for item in lst, if item is match exactly, replace the find_val with replace_val
 
